@@ -21,4 +21,7 @@
   "keywords": ["ffi", "bindings", "web"],
   "author": "gigiaj",
   "license": "MIT"
+  "dependencies": {
+    "uniffi-bindgen-react-native": "git+https://github.com/jhugman/uniffi-bindgen-react-native#b7c8a4eba1b91e6aa9478e1d13be17cdae9432a6"
+  }
 }
