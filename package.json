@@ -1,6 +1,6 @@
 {
   "name": "ffi-bindings",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "ubrn:web:build:release": "PATH=$HOME/.cargo/bin:/bin:$PATH && ubrn build web --config ubrn.config.yaml --release",
     "ubrn:web:build": "PATH=$HOME/.cargo/bin:/bin:$PATH && ubrn build web --config ubrn.config.yaml",
