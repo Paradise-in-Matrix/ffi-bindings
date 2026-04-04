@@ -12,6 +12,8 @@ cat <<EOF > src/generated-compat/wasm-bindgen/index_bg.js
 export default "./generated-compat/wasm-bindgen/index_bg.wasm";
 EOF
 
+sed -i.bak 's/index_bg\.wasm/index_bg/g' src/index.web.js
+
 npx babel src/index.web.ts \
     --config-file ./babel.config.json \
     --out-file src/index.web.js
