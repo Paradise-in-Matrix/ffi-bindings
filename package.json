@@ -2,6 +2,12 @@
 {
   "name": "ffi-bindings",
   "version": "1.0.0",
+    "scripts": {
+        "ubrn:web:build:release": "PATH=$HOME/.cargo/bin:/bin:$PATH && ubrn build web --config ubrn.config.yaml --release",
+        "ubrn:web:build": "PATH=$HOME/.cargo/bin:/bin:$PATH && ubrn build web --config ubrn.config.yaml",
+        "ubrn:checkout": "PATH=$HOME/.cargo/bin:/bin:$PATH && ubrn checkout --config ubrn.config.yaml",
+        "ubrn:clean": "rm -Rf cpp/ src/generated/ src/index.web.ts*"
+    },
   "main": "src/index.web.js",
   "type": "module",
   "description": "Generated bindings for the rust-sdk WASM + WASM",
