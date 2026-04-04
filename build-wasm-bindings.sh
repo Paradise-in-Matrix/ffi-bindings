@@ -9,7 +9,8 @@ cd ../..
 
 
 export PATH="$HOME/.local/bin:$PATH"
-
+export LD_LIBRARY_PATH="$(dirname $(gcc -print-file-name=libgcc_s.so.1)):$LD_LIBRARY_PATH"
+export LIBRARY_PATH="$(dirname $(gcc -print-file-name=libgcc_s.so.1)):$LIBRARY_PATH"
 
 
 echo "==> Step 1: Cleaning..."
