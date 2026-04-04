@@ -1,7 +1,6 @@
-
 {
   "name": "ffi-bindings",
-  "version": "1.0.0",
+  "version": "1.0.1",
     "scripts": {
         "ubrn:web:build:release": "PATH=$HOME/.cargo/bin:/bin:$PATH && ubrn build web --config ubrn.config.yaml --release",
         "ubrn:web:build": "PATH=$HOME/.cargo/bin:/bin:$PATH && ubrn build web --config ubrn.config.yaml",
@@ -18,9 +17,13 @@
   "files": [
     "src"
   ],
-  "keywords": ["ffi", "bindings", "web"],
+  "keywords": [
+    "ffi",
+    "bindings",
+    "web"
+  ],
   "author": "gigiaj",
-  "license": "MIT"
+  "license": "MIT",
   "dependencies": {
     "uniffi-bindgen-react-native": "git+https://github.com/jhugman/uniffi-bindgen-react-native#b7c8a4eba1b91e6aa9478e1d13be17cdae9432a6"
   }
