@@ -36,6 +36,7 @@
     "@babel/preset-env": "^7.29.2",
     "@babel/preset-typescript": "^7.28.5",
     "babel-plugin-transform-rename-import": "^2.3.0",
+    "rollup": "^4.60.1",
     "uniffi-bindgen-react-native": "git+https://github.com/jhugman/uniffi-bindgen-react-native#b7c8a4eba1b91e6aa9478e1d13be17cdae9432a6"
   },
   "devDependencies": {
