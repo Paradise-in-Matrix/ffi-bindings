@@ -1,18 +1,19 @@
 {
     "presets": [
-[
-    "@babel/preset-env",
-    {
-        "modules": false,
-        "exclude": [
-            "transform-async-to-generator",
-            "transform-regenerator"
-        ]
-    }
-],
+        [
+            "@babel/preset-env",
+            {
+                "modules": false,
+                "exclude": [
+                    "transform-async-to-generator",
+                    "transform-regenerator"
+                ]
+            }
+        ],
         "@babel/preset-typescript"
     ],
     "plugins": [
+        "./babel-plugin-uniffi-destructure.js",
         [
             "transform-rename-import",
             {
