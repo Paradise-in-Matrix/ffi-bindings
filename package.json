@@ -7,8 +7,6 @@
     "ubrn:checkout": "PATH=$HOME/.cargo/bin:/bin:$PATH && ubrn checkout --config ubrn.config.yaml",
     "ubrn:clean": "rm -Rf cpp/ src/generated/ src/index.web.ts*"
   },
-  "main": "src/index.web.js",
-  "type": "module",
   "description": "Generated bindings for the rust-sdk WASM + WASM",
   "repository": {
     "type": "git",
@@ -24,6 +22,12 @@
   ],
   "author": "gigiaj",
   "license": "MIT",
+  "type": "module",
+  "main": "dist/index.esm.js",
+  "module": "dist/index.esm.js",
+  "exports": {
+    ".": "./dist/index.esm.js"
+  },
   "dependencies": {
     "@babel/cli": "^7.28.6",
     "@babel/core": "^7.29.0",
