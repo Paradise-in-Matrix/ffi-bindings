@@ -1,8 +1,9 @@
 rust:
-  repo: https://github.com/matrix-org/matrix-rust-sdk
-  ref: 32e9626e0f58ab3288094159532c794cdfb0ec7b
-
+#  repo: "file:///home/jaggar/Code/matrix-rust-sdk"
+  repo: "https://github.com/GigiaJ/matrix-rust-sdk"
+  ref: "HEAD"
   manifestPath: bindings/matrix-sdk-ffi/Cargo.toml
+
 web:
   workspace: true
   manifestPath: rust_modules/matrix-rust-sdk/bindings/wasm/Cargo.toml
