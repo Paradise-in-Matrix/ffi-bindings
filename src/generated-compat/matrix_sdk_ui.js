@@ -20,9 +20,16 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 /* eslint-disable */
 // @ts-nocheck
 import * as wasmBundle from "./wasm-bindgen/index.js";
-import { AbstractFfiConverterByteArray, FfiConverterBool, FfiConverterInt32, UniffiEnum, UniffiInternalError, UniffiRustCaller, uniffiCreateFfiConverterString, uniffiTypeNameSymbol } from "uniffi-bindgen-react-native";
-
-// Get converters from the other files, if any.
+import * as uniffi from "uniffi-bindgen-react-native";
+var _uniffi = uniffi,
+  AbstractFfiConverterByteArray = _uniffi.AbstractFfiConverterByteArray,
+  FfiConverterBool = _uniffi.FfiConverterBool,
+  FfiConverterInt32 = _uniffi.FfiConverterInt32,
+  UniffiEnum = _uniffi.UniffiEnum,
+  UniffiInternalError = _uniffi.UniffiInternalError,
+  UniffiRustCaller = _uniffi.UniffiRustCaller,
+  uniffiCreateFfiConverterString = _uniffi.uniffiCreateFfiConverterString,
+  uniffiTypeNameSymbol = _uniffi.uniffiTypeNameSymbol; // Get converters from the other files, if any.
 var nativeModule = function nativeModule() {
   return wasmBundle;
 };

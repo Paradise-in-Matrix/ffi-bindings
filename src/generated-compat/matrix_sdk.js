@@ -20,9 +20,26 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 /* eslint-disable */
 // @ts-nocheck
 import * as wasmBundle from "./wasm-bindgen/index.js";
-import { AbstractFfiConverterByteArray, FfiConverterBool, FfiConverterFloat64, FfiConverterInt32, FfiConverterInt64, FfiConverterObject, FfiConverterOptional, UniffiAbstractObject, UniffiEnum, UniffiError, UniffiInternalError, UniffiRustCaller, destructorGuardSymbol, pointerLiteralSymbol, uniffiCreateFfiConverterString, uniffiCreateRecord, uniffiTypeNameSymbol, variantOrdinalSymbol } from "uniffi-bindgen-react-native";
-
-// Get converters from the other files, if any.
+import * as uniffi from "uniffi-bindgen-react-native";
+var _uniffi = uniffi,
+  AbstractFfiConverterByteArray = _uniffi.AbstractFfiConverterByteArray,
+  FfiConverterBool = _uniffi.FfiConverterBool,
+  FfiConverterFloat64 = _uniffi.FfiConverterFloat64,
+  FfiConverterInt32 = _uniffi.FfiConverterInt32,
+  FfiConverterInt64 = _uniffi.FfiConverterInt64,
+  FfiConverterObject = _uniffi.FfiConverterObject,
+  FfiConverterOptional = _uniffi.FfiConverterOptional,
+  UniffiAbstractObject = _uniffi.UniffiAbstractObject,
+  UniffiEnum = _uniffi.UniffiEnum,
+  UniffiError = _uniffi.UniffiError,
+  UniffiInternalError = _uniffi.UniffiInternalError,
+  UniffiRustCaller = _uniffi.UniffiRustCaller,
+  destructorGuardSymbol = _uniffi.destructorGuardSymbol,
+  pointerLiteralSymbol = _uniffi.pointerLiteralSymbol,
+  uniffiCreateFfiConverterString = _uniffi.uniffiCreateFfiConverterString,
+  uniffiCreateRecord = _uniffi.uniffiCreateRecord,
+  uniffiTypeNameSymbol = _uniffi.uniffiTypeNameSymbol,
+  variantOrdinalSymbol = _uniffi.variantOrdinalSymbol; // Get converters from the other files, if any.
 var nativeModule = function nativeModule() {
   return wasmBundle;
 };
