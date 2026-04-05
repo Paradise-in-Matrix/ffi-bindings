@@ -20,3 +20,7 @@ npx babel src/index.web.ts \
 sed -i.bak 's/\.\/generated\//\.\/generated-compat\//g' src/index.web.js
 
 sed -i.bak 's/index_bg\.wasm/index_bg/g' src/index.web.js
+
+
+npx rollup -c
+
